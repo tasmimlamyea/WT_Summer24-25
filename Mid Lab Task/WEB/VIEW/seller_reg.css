@@ -1,0 +1,123 @@
+/* Reset some default styles */
+body, h1, p, table, td, input, select {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body background and text color */
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container for consistent width and centering */
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+/* Header styles */
+header .container {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Main content spacing */
+main .container {
+    margin-top: 20px;
+}
+
+/* Form table styling */
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form td {
+    padding: 12px 10px;
+    vertical-align: middle;
+}
+
+form label {
+    font-weight: 600;
+    display: inline-block;
+    width: 140px;
+}
+
+/* Input and select fields styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Error message styling */
+.error {
+    color: #d93025;
+    font-size: 0.875rem;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Center submit button cell */
+td[colspan="2"] {
+    text-align: center;
+}
+
+/* Footer styling */
+footer .container {
+    text-align: center;
+    margin: 30px auto 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
